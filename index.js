@@ -13,10 +13,12 @@ const tutorials = [
 
 const titleCased = (input) => {
   return tutorials.map( line => {
-    let tokens = line.split(' ')
-    let capitalizedTokens =
-      tokens.map( token => token.charAt(0).toUpperCase() + token.slice(1) )
-    let response = capitalizedTokens.join(' ')
+    // split the string into an array
+    let words = line.split(' ')
+    // individually capitalize each word in array
+    let capitalizedWords =
+      words.map( word => word.charAt(0).toUpperCase() + word.slice(1) )
+    let response = capitalizedWords.join(' ')
     return response
   })
 }
