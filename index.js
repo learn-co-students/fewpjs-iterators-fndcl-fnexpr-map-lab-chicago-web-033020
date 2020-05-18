@@ -17,14 +17,14 @@ const titleCased = (sentence) => {
   item as 'tutorial' */
   return tutorials.map( tutorial => {
     // .split returns new array of words 
-    let arrayWord = tutorial.split(" ");
+    const arrayWord = tutorial.split(" ");
     // mapping over new words array
-    let newWords = arrayWord.map(word => 
+    const newWords = arrayWord.map(word => 
       // start at 0 of each word, then uppercase
       // not sure what slice is doing
       word.charAt(0).toUpperCase() + word.slice(1));
     // joins edited words back and seperated by space
-    let capSent = newWords.join(" ");
+    const capSent = newWords.join(" ");
     return capSent;
   });
 };
