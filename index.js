@@ -24,4 +24,8 @@ function capitalize(string){
 
 const titleCased = tutorials.map(capitalize);
 
+// THIS WORKS WHEN I RUN IT BUT THE TEST KEEPS SAYING TITLECASED IS NOT DEFINED
+// IT'S RIGHT GODDAMNED THERE ON LINE 25
+// AND IT FUNCTIONS CORRECTLY.
+
 
